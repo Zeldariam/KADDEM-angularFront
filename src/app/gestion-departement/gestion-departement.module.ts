@@ -6,7 +6,7 @@ import { ListDepartementComponent } from './list-departement/list-departement.co
 import { AddDepartComponent } from './add-depart/add-depart.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateDepartComponent } from './update-depart/update-depart.component';
- 
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     ListDepartementComponent,
@@ -19,7 +19,7 @@ import { UpdateDepartComponent } from './update-depart/update-depart.component';
     GestionDepartementRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    
+    MatButtonModule,
   ],
   exports: [
     ListDepartementComponent

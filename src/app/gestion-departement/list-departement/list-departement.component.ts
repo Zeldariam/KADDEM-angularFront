@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Agent } from 'http';
 import { Departement } from 'src/app/Models/Departement';
 import { ServiceDepartService } from 'src/app/service-depart.service';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-list-departement',

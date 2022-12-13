@@ -12,15 +12,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-   
-    
-   
   ],
   imports: [
     BrowserModule,
@@ -31,7 +30,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatButtonModule,
   ],
   providers: [], // services  
   bootstrap: [AppComponent]
