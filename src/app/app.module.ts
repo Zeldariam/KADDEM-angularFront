@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
 
+import {MatIcon, MatIconModule} from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,8 @@ import {MatButtonModule} from '@angular/material/button';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatButtonModule,
+    MatButtonModule,    
+    MatIconModule
   ],
   providers: [], // services  
   bootstrap: [AppComponent]

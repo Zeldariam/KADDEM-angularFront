@@ -1,0 +1,9 @@
+body {
+    /*border: solid red 4px;*/
+}
+div.row{
+    
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}

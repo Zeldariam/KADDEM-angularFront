@@ -1,2 +1,72 @@
 
-<button mat-raised-button color="primary">Primary</button>
+<mat-card >
+    <mat-card-title>List Département</mat-card-title>
+
+    <div class="login-container">
+
+    <DIV class="mainContainer">
+    
+        <div id="searchBar">
+    
+            <!-- BARRE DE RECHERCHE-->
+              <mat-form-field class="searchBar">
+                <input
+                  matInput
+                  placeholder="Search"
+                  type="search"
+                  class="align-text"
+                  [(ngModel)]="nomDepartement"
+                />
+                <span matSuffix><mat-icon>search</mat-icon></span>
+              </mat-form-field>
+            
+            </div>
+            <button mat-raised-button color="primary" id="addButton">Ajouter un département</button>
+        <div id="table-container">
+            <div >
+                <!-- 5EDMET MOEZ -->
+                <table class=" table table-striped  table-hover mat-elevation-z8">
+                    <tr>
+                        <th>ID</th>
+                  
+                        <th>Departement</th>
+                  
+                        <th>Action</th>
+                  
+                    </tr>
+                    <ng-container *ngFor="let e of list3"> 
+                        <tr [hidden]="!(e.nomDepart.toUpperCase().indexOf(nomDepartement.toUpperCase()) != -1)">
+                            <td>
+                                {{e.idDepart}}
+                            </td>
+                            <td>
+                                {{e.nomDepart}}
+                            </td>
+                            <td>
+                                <button
+                                  mat-button
+                                  aria-label="Modify"
+                                  matTooltip="Edit infos"
+                                  [routerLink]=""
+                                >
+                                  <mat-icon>edit</mat-icon>
+                                </button>
+                                <button
+                                  mat-button
+                                  aria-label="Delete"
+                                  matTooltip="Delete"
+                                  matTooltipClass="example-tooltip-red"
+                                  
+                                >
+                                  <mat-icon>delete</mat-icon>
+                                </button>
+                              </td>
+                        </tr>
+                    </ng-container>
+                </table>
+                
+            </div>
+        </div>
+    </DIV>
+
+    
